@@ -1,0 +1,68 @@
+COMP 472 - Artificial Intelligence | Summer 2026
+Mini Project 1 - Reflection
+=====================================
+
+Team Members
+------------
+- Nguyen Le       | ID: __________
+- Karim Mawji     | ID: __________
+- Luca Ieraci     | ID: 40276520
+
+
+Contributions
+-------------
+Nguyen Le:
+  - Set up the knowledge base (knowledge_base.csv) with relevant Concordia Q&A entries
+  - Implemented the load_knowledge_base() method using pandas
+  - Researched and implemented the semantic search component (find_best_answer)
+  - Tested the cosine similarity retrieval with various queries
+
+Karim Mawji:
+  - Researched sentence embeddings and the SentenceTransformer library
+  - Implemented the generate_embeddings() method
+  - Tested embedding quality across different question phrasings
+  - Contributed to overall code structure and OOP design
+
+Luca Ieraci:
+  - Researched and implemented the sentiment analysis pipeline using HuggingFace Transformers
+  - Implemented the escalation logic (should_escalate method)
+  - Built the interactive conversation loop (chat method) with error handling
+  - Handled environment setup and dependency installation
+  - Took charge of the bulk of testing
+
+
+Difficulties Faced
+------------------
+1. Understanding embeddings from scratch:
+   We had no prior experience with sentence embeddings. We read the SentenceTransformers
+   documentation and a few short articles to understand that embeddings are dense vector
+   representations of text that capture semantic meaning. Once we understood the concept,
+   the actual implementation turned out to be just a few lines of code.
+
+2. Choosing a sentiment model that supports NEUTRAL:
+   The default HuggingFace sentiment-analysis pipeline only returns POSITIVE or NEGATIVE.
+   We needed a three-class model to also detect NEUTRAL sentiment as shown in the expected
+   output. We found the cardiffnlp/twitter-roberta-base-sentiment-latest model which
+   supports all three classes and resolved this issue.
+
+3. Windows long path installation error:
+   Installing PyTorch on Windows failed due to the 260-character path length limit.
+   We worked around this by creating a Python virtual environment at a short path (C:\p1)
+   and installing the CPU-only version of PyTorch, which avoids the long CUDA header files
+   that caused the error.
+
+
+Time Breakdown
+--------------
+Task                                        | Time Spent
+--------------------------------------------|------------
+Understanding embeddings                    | 1 hour
+Environment setup and dependency install    | 1.5 hours
+Implementing knowledge base loading        | 0.5 hours
+Implementing semantic search               | 1.5 hours
+Implementing sentiment analysis            | 1.5 hours
+Building the conversation loop             | 1 hour
+Testing and debugging                      | 2 hours
+Writing reflection                         | 0.5 hours
+--------------------------------------------|------------
+Total                                       | ~9.5 hours
