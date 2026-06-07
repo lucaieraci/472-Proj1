@@ -4,7 +4,7 @@ Mini Project 1 - Reflection
 
 Team Members
 ------------
-- Nguyen Le       | ID: __________
+- Nguyen Le       | ID: 40272922
 - Karim Mawji     | ID: 40281154
 - Luca Ieraci     | ID: 40276520
 
@@ -12,10 +12,11 @@ Team Members
 Contributions
 -------------
 Nguyen Le:
-  - Set up the knowledge base (knowledge_base.csv) with relevant Concordia Q&A entries
+  - Set up the knowledge base (knowledge_base.csv) with relevant Concordia realted Q&A entries
   - Implemented the load_knowledge_base() method using pandas
   - Researched and implemented the semantic search component (find_best_answer)
-  - Tested the cosine similarity retrieval with various queries
+  - Tested the cosine similarity retrieval
+  - Uploaded screenshots of outputs
 
 Karim Mawji:
   - Researched sentence embeddings and the SentenceTransformer library
@@ -57,7 +58,7 @@ Time Breakdown
 Task                                        | Time Spent
 --------------------------------------------|------------
 Understanding embeddings                    | 1 hour
-Environment setup and dependency install    | 1.5 hours
+Environment setup and dependency install    | 1 hours
 Implementing knowledge base loading        | 0.5 hours
 Implementing semantic search               | 1.5 hours
 Implementing sentiment analysis            | 1.5 hours
@@ -65,4 +66,4 @@ Building the conversation loop             | 1 hour
 Testing and debugging                      | 2 hours
 Writing reflection                         | 0.5 hours
 --------------------------------------------|------------
-Total                                       | ~9.5 hours
+Total                                       | ~9 hours
