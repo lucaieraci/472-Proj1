@@ -5,7 +5,7 @@ Mini Project 1 - Reflection
 Team Members
 ------------
 - Nguyen Le       | ID: __________
-- Karim Mawji     | ID: __________
+- Karim Mawji     | ID: 40281154
 - Luca Ieraci     | ID: 40276520
 
 
